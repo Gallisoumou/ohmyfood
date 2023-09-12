@@ -1,0 +1,33 @@
+
+    /* ... */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto';
+        text-decoration: none;
+    }
+.entete {
+        width: 100%;
+        height: 100%;
+        background: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .entete{
+        &__logo {
+            font-family: 'Shrikhand', "italic";
+            font-size: 700;
+        }
+    }
+
+.lieu {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px; display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray
+}
+
