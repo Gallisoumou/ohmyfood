@@ -1,0 +1,5 @@
+@mixin responsive($min-with :1400px){
+    @media (min-with:992px) and (max-with:$min-with){
+        @content;
+    }
+}
