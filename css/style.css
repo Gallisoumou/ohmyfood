@@ -30,25 +30,6 @@
 /****** Media queries ***********/
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /* large devices (desktop, less/equal than 1200px) */
-@media (max-width: 1200px) {
-  .renseignement {
-    background: black;
-    color: #F6F6F6;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    padding-left: 15px;
-  }
-  .renseignement .foot {
-    padding-bottom: 10px;
-  }
-  .renseignement .spoon {
-    padding-left: 10px;
-  }
-  .renseignement .hand {
-    padding-left: 10px;
-  }
-}
 /* ... */
 * {
   margin: 0;
@@ -142,6 +123,13 @@ body {
   padding: 15px;
 }
 
+@media (min-width: 1440px) {
+  .fonctions {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .fonctionnement {
   padding: 25px;
   width: 90%;
@@ -149,12 +137,8 @@ body {
   border-radius: 20px;
   margin: 20px;
   margin-left: 20px;
-}
-@media (min-with: 992px) and (max-with: 1400px) {
-  .fonctionnement {
-    display: flex;
-    background-color: red;
-  }
+  display: flex;
+  align-items: center;
 }
 .fonctionnement .numero {
   padding-left: 9px;
@@ -164,8 +148,13 @@ body {
   border-radius: 50%;
   background-color: #9356DC;
   color: #F6F6F6;
-  position: absolute;
-  left: 2px;
+  position: relative;
+  right: 5.5%;
+}
+@media (min-width: 1440px) {
+  .fonctionnement .numero {
+    right: 10%;
+  }
 }
 .fonctionnement .maison {
   color: #9356DC;

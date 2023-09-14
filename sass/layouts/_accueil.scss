@@ -67,6 +67,14 @@
     padding: 15px;
 }
 
+.fonctions{
+    //version desktop
+    @include desktop{
+       display: flex;
+       align-items: center;
+    }
+}
+
 .fonctionnement{
         padding: 25px;
         width: 90%;
@@ -74,9 +82,11 @@
         border-radius: 20px;
         margin: 20px;
         margin-left: 20px;
-        @include responsive{
-            display: flex;
-            background-color: red;
+        display: flex;
+        align-items: center;
+        @include desktop{
+           
+           
         }
         .numero{
             padding-left:  9px;
@@ -86,8 +96,11 @@
            border-radius: 50%;
             background-color: #9356DC;
             color: #F6F6F6;
-            position: absolute;
-            left: 2px; 
+            position: relative;
+            right: 5.5%; 
+            @include desktop{
+                right: 10%;
+            }
         }
         .maison{
             color: #9356DC;

@@ -31,28 +31,6 @@
    /****** Media queries ***********/
         /* Le code ci-dessous correspond à la version responsive uniquement */
         /* large devices (desktop, less/equal than 1200px) */
-        @media (max-width: 1200px){
-            .renseignement{
-                background: black;
-                color: #F6F6F6;
-                display: flex;
-                justify-content: flex-start;
-                flex-direction: column;
-                padding-left: 15px;
-                .foot{
-                
-                    padding-bottom: 10px;
-            
-                }
-                .spoon {
-                    padding-left: 10px;
-            
-                 }
-                 .hand{
-                    padding-left: 10px;
-                 }  
-        }
-    }
-
+       
 
 
