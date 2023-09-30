@@ -8,25 +8,65 @@
    padding-bottom: 15px;
     font-size: 10px;
     font-weight: 300;
+    .alls{
+        @include desktop{
+            display: flex;
+        }
+    }
+    @include desktop{  
+        flex-direction: row-reverse;
+        justify-content: end;
+        gap: 20px;
+        align-items: center;
+        padding-right: 2%;
+       
+    }   
     .foot{
         font-family: "Roboto";
         font-size: 15px;
-        padding-bottom: 15px;
+        padding-bottom: 10px;
         padding-top: 15px;
         font-style: italic;
         font-weight: 700;
-        
-
+        @include desktop{
+          text-align: end;
+          
+            
+        }      
+    }
+    .renseigne{
+        margin-top: 10px; 
+        @include desktop{
+            margin-right: 15px;
+        }   
     }
     .spoon {
         padding-left: 10px;
         padding-bottom: 15px;
-
+        @include desktop{
+            margin-right: 15px;
+        }      
      }
      .hand{
         padding-left: 10px;
         padding-top: 15px;
+        @include desktop{
+            margin-right: 15px;
+        }      
      }
+     .mention{
+        margin-top: 10px;
+        @include desktop{
+            margin-right: 15px;
+        }      
+     }
+     .contacte{
+        margin-top: 10px;
+        @include desktop{
+            margin-right: 15px;
+        }      
+     }
+    
    }
    /****** Media queries ***********/
         /* Le code ci-dessous correspond à la version responsive uniquement */
