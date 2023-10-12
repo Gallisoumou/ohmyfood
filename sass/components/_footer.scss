@@ -9,6 +9,7 @@
     font-size: 10px;
     font-weight: 300;
     .alls{
+        margin-bottom: 5px;
         @include desktop{
             display: flex;
         }
@@ -22,7 +23,7 @@
        
     }   
     .foot{
-        font-family: "Roboto";
+        font-family: "Shrikhand";
         font-size: 15px;
         padding-bottom: 10px;
         padding-top: 15px;

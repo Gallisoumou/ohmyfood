@@ -170,13 +170,16 @@
                     font-weight: 300; 
                 }
                     .coeur{
-                        color: #9356DC;
                         .plein{
                             position: relative;
                             right: 17px;
                             opacity: 0;
                             &:hover{
                                 opacity: 1;
+                                background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+                                background-clip: text;
+                                -webkit-background-clip: text;
+                                color: transparent;
                             }
                         }
                         

@@ -10,6 +10,9 @@
   font-size: 10px;
   font-weight: 300;
 }
+.renseignement .alls {
+  margin-bottom: 5px;
+}
 @media (min-width: 900px) {
   .renseignement .alls {
     display: flex;
@@ -25,7 +28,7 @@
   }
 }
 .renseignement .foot {
-  font-family: "Roboto";
+  font-family: "Shrikhand";
   font-size: 15px;
   padding-bottom: 10px;
   padding-top: 15px;
@@ -319,9 +322,6 @@ body {
   color: black;
   font-weight: 300;
 }
-.menu .contenu-photo .desc .coeur {
-  color: #9356DC;
-}
 .menu .contenu-photo .desc .coeur .plein {
   position: relative;
   right: 17px;
@@ -329,6 +329,10 @@ body {
 }
 .menu .contenu-photo .desc .coeur .plein:hover {
   opacity: 1;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .menu .contenu-photo .commentaire {
   background-color: #99e2d0;
@@ -423,6 +427,10 @@ main {
 }
 .menus .restos .coeur .plein:hover {
   opacity: 1;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .menus .restos .coeur .vide:hover {
   opacity: 0;
