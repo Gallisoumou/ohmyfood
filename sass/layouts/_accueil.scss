@@ -86,7 +86,6 @@
         margin-left: 20px;
         display: flex;
         align-items: center;
-        
         .numero{
             padding-left:  9px;
             padding-right: 9px;
@@ -96,13 +95,20 @@
             background-color: #9356DC;
             color: #F6F6F6;
             position: relative;
-            right: 5.5%; 
+            right: 8%; 
             @include desktop{
                 right: 10%;
             }
         }
         .maison{
             color: #9356DC;
+            margin: 10px;
+        }
+        .phone{
+            margin: 10px;
+        }
+        .liste{
+            margin: 10px;  
         }
     }
        .restaurant{

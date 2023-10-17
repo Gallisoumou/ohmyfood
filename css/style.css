@@ -245,7 +245,7 @@ body {
   background-color: #9356DC;
   color: #F6F6F6;
   position: relative;
-  right: 5.5%;
+  right: 8%;
 }
 @media (min-width: 900px) {
   .fonctionnement .numero {
@@ -254,6 +254,13 @@ body {
 }
 .fonctionnement .maison {
   color: #9356DC;
+  margin: 10px;
+}
+.fonctionnement .phone {
+  margin: 10px;
+}
+.fonctionnement .liste {
+  margin: 10px;
 }
 
 .restaurant {
