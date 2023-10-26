@@ -33,7 +33,7 @@
     .reserver{ 
     text-align: center; 
     margin: 20px; 
-    font-size: 30px;
+    font-size: 20px;
     @include desktop{
         text-align: center;         
     }
@@ -41,7 +41,7 @@
      }
 
      .decouvrir{
-        font-size: 20px;
+        font-size: 15px;
         text-align: center;
         margin: 20px;
     }
@@ -95,7 +95,7 @@
             background-color: #9356DC;
             color: #F6F6F6;
             position: relative;
-            right: 8%; 
+            right: 14%; 
             @include desktop{
                 right: 10%;
             }
@@ -114,14 +114,24 @@
        .restaurant{
         background: #F6F6F6;
         margin-bottom: 20px;
+        @include desktop{
+            width: 100%;
+            margin: auto;
+        }
+        
        .restaurant-all{
         width: 100%;
         display: flex;
+        align-items:  center;
         flex-direction: column;
         @include desktop{
             width: 100%;
             flex-direction: row;
             flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;
+            gap: 30px;
+            
            
            
            } 
@@ -147,6 +157,7 @@
                 
             @include desktop{
                 width: 46%;
+               
                   
             }
             img {
@@ -155,8 +166,28 @@
                border-top-left-radius: 10px;
                border-top-right-radius: 10px;
                object-fit: cover;
+               @include desktop{
+              display: flex;
+               
+                  
+            }
+            
             }
 
+            .commentaire{
+                background-color: #99e2d0;
+                color: #1b6150;
+                position: absolute;
+               left: 70%;
+               margin-top: 10px;
+               padding: 5px;
+            @include desktop{
+                position: relative;
+                top: -130px;
+                left: 80%;
+            }
+                
+            }
             .contenu-photo {
                 background: #ffffff;
                 width: 100%;
@@ -193,13 +224,7 @@
                     
                 }
                 
-                .commentaire{
-                    background-color: #99e2d0;
-                    color: #1b6150;
-                    position: relative;
-                    left: 80%;
-                    bottom: 115px;
-                }
+                
             }
           
         }
