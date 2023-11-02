@@ -75,6 +75,8 @@
 }
 .renseignement .contacte {
   margin-top: 10px;
+  text-decoration: none;
+  color: white;
 }
 @media (min-width: 900px) {
   .renseignement .contacte {
@@ -538,6 +540,30 @@ main {
   text-align: center;
   margin: auto;
   margin-bottom: 20px;
+}
+
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.entrees {
+  animation: apparition 4s ease 0.5s forwards;
+}
+
+.Plats {
+  animation: apparition 4s ease 1.5s forwards;
+}
+
+.desserts {
+  animation: apparition 4s ease 2.5s forwards;
+}
+
+.item {
+  opacity: 0;
 }
 
 h2 {
