@@ -100,7 +100,7 @@
   font-family: "shrikand";
   display: flex;
   align-items: center;
-  box-shadow: 0, 0, 0, 40px;
+  box-shadow: 0 0 0 #d9d9d9;
 }
 @media (min-width: 900px) {
   .entete {
@@ -165,13 +165,16 @@ body {
   flex-direction: row;
   background: #d9d9d9;
   font-weight: 400;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
 }
 .reservation .lieu .search {
-  padding-left: 10px;
+  text-align: center;
   background: #d9d9d9;
   border: none;
   color: black;
+  font-weight: 400;
   font-size: 14px;
 }
 
@@ -209,6 +212,11 @@ body {
   padding-bottom: 20px;
   padding: 10px;
 }
+@media (min-width: 900px) {
+  .lien a {
+    width: auto;
+  }
+}
 
 .fonction_title {
   font-weight: 900;
@@ -223,7 +231,7 @@ body {
 }
 
 .fonctionnement {
-  padding: 25px;
+  padding: 15px;
   width: 90%;
   background: #F6F6F6;
   border-radius: 20px;
@@ -241,11 +249,11 @@ body {
   background-color: #9356DC;
   color: #F6F6F6;
   position: relative;
-  right: 14%;
+  right: 10%;
 }
 @media (min-width: 900px) {
   .fonctionnement .numero {
-    right: 10%;
+    right: 7%;
   }
 }
 .fonctionnement .maison {
@@ -481,7 +489,7 @@ main {
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .prix-entrees .animation {
   width: 100%;
@@ -507,9 +515,9 @@ main {
   white-space: nowrap;
 }
 .prix-entrees .ok {
-  width: 20%;
-  height: 70px;
-  display: none;
+  width: 0;
+  position: relative;
+  left: 70px;
   color: #ffffff;
   background-color: #99e2d0;
   cursor: pointer;
@@ -519,7 +527,9 @@ main {
   padding-top: 25px;
 }
 .prix-entrees:hover > .ok {
-  display: block;
+  left: 0;
+  width: 70px;
+  transition-duration: 400ms;
 }
 
 .euro {
@@ -540,6 +550,11 @@ main {
   text-align: center;
   margin: auto;
   margin-bottom: 20px;
+}
+@media (min-width: 900px) {
+  .bouton {
+    width: 15%;
+  }
 }
 
 @keyframes apparition {
